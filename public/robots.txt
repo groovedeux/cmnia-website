@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://cmnia.com/sitemap.xml

@@ -1,0 +1,15 @@
+/* Preserve the original design while keeping the quote panel usable on small screens. */
+.wrap-embed-contact-form { z-index: 1050; }
+.wrap-embed-contact-form .form-content { max-height: calc(100dvh - 150px); overflow-y: auto; }
+.wrap-embed-contact-form:not(.show-widget) .embed-contact-form > :not(.btn-show-contact) { visibility: hidden; }
+.wrap-embed-contact-form.show-widget { right: 0; }
+.form-status { margin-top: 12px; }
+.form-status.error { color: #a12622; }
+#contact_form label { font-weight: normal; }
+.wrap-embed-contact-form .form-message { margin: 10px 0; }
+@media (max-width: 360px) {
+  .wrap-embed-contact-form { width: 270px; right: -270px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .wrap-embed-contact-form { transition: none; }
+}
